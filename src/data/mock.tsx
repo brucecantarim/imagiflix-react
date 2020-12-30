@@ -3,9 +3,11 @@ import cover2 from '../assets/movie2.jpg';
 import cover3 from '../assets/movie3.jpg';
 
 export interface Movie {
-  title: string;
-  cover: string;
-  score?: number | string;
+  title?: string;
+  name?: string;
+  cover?: string;
+  poster_path?: string;
+  vote_average?: number | string;
 }
 
 const mockData: Movie[] = [
